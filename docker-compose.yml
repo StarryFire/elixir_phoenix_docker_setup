@@ -4,9 +4,9 @@ services:
   phoenix_blogs_web:
     build: .
     container_name: phoenix_blogs_web
-    command: /app/scripts/entry_point.sh
+    entrypoint: bash -c "./scripts/entry_point.sh"
     volumes:
-      - ./src:/app
+      - .:/app
     ports:
       - 4000:4000
     environment:

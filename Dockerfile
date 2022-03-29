@@ -11,5 +11,5 @@ RUN mix local.rebar --force
 
 # Create app directory and copy the Elixir projects into it.
 RUN mkdir /app
-COPY ./src /app
+COPY . /app
 WORKDIR /app
