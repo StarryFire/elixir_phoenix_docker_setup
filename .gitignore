@@ -33,4 +33,4 @@ npm-debug.log
 /assets/node_modules/
 
 # docker volumes
-docker-volumes/
+volumes/
